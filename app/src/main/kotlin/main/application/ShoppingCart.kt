@@ -3,15 +3,15 @@ package main.application
 import main.domain.Amount
 import main.domain.Product
 
-class ShoppingCart(val items: List<ShoppingCartItem> = emptyList()) {
+data class ShoppingCart(val items: List<ShoppingCartItem> = emptyList()) {
     companion object {
-        val TAX: Amount = Amount(0.125.toBigDecimal())
+        private val TAX = Amount(0.125.toBigDecimal())
     }
 
     fun add(product: Product, quantity: Int = 1): ShoppingCart = ShoppingCart(addToShoppingCartItems(product, quantity))
-    fun subtotal(): Amount = this.items.sumOf { item -> item.subtotal() }
-    fun tax(): Amount = this.items.sumOf { item -> item.subtotal() * TAX }
-    fun total(): Amount = this.subtotal() + this.tax()
+    fun subtotal(): Amount = items.sumOf { item -> item.subtotal() }
+    fun tax(): Amount = items.sumOf { item -> item.subtotal() * TAX }
+    fun total(): Amount = subtotal() + tax()
 
     private fun addToShoppingCartItems(product: Product, quantity: Int): List<ShoppingCartItem> {
         return when (val existingItem = findItemBy(product)) {

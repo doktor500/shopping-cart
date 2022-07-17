@@ -1,7 +1,7 @@
-package main.application
+package shoppingcart.application
 
-import main.domain.Amount
-import main.domain.Product
+import shoppingcart.domain.Amount
+import shoppingcart.domain.Product
 
 data class ShoppingCartItem(val product: Product, val quantity: Int = 1) {
     fun subtotal(): Amount = product.price * quantity

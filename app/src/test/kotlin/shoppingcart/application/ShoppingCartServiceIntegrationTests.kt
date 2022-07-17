@@ -1,11 +1,11 @@
-package main.application
+package shoppingcart.application
 
 import arrow.core.computations.ResultEffect.bind
 import arrow.core.handleError
-import main.adapters.FakeProductCatalogue
-import main.adapters.ProductCatalogueApi
-import main.domain.Product
-import main.domain.amount
+import shoppingcart.adapters.FakeProductCatalogue
+import shoppingcart.adapters.ProductCatalogueApi
+import shoppingcart.domain.Product
+import shoppingcart.domain.amount
 import org.junit.jupiter.params.ParameterizedTest
 import org.junit.jupiter.params.provider.Arguments
 import org.junit.jupiter.params.provider.MethodSource

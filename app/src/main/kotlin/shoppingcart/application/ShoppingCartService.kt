@@ -1,7 +1,7 @@
-package main.application
+package shoppingcart.application
 
 import arrow.core.Either
-import main.domain.Product
+import shoppingcart.domain.Product
 
 class ShoppingCartService(private val productCatalogue: ProductCatalogue) {
     fun add(productName: String, to: ShoppingCart): Either<Error, ShoppingCart> {

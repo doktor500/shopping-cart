@@ -1,7 +1,7 @@
-package main.presenters
+package shoppingcart.presenters
 
-import main.application.ShoppingCart
-import main.domain.Product
+import shoppingcart.application.ShoppingCart
+import shoppingcart.domain.Product
 
 class ShoppingCartPresenter(private val shoppingCart: ShoppingCart) {
     fun present(): String {

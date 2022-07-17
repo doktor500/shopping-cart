@@ -1,8 +1,8 @@
-package main.application
+package shoppingcart.application
 
-import main.domain.Amount
-import main.domain.Product
-import main.domain.amount
+import shoppingcart.domain.Amount
+import shoppingcart.domain.Product
+import shoppingcart.domain.amount
 import org.junit.jupiter.params.ParameterizedTest
 import org.junit.jupiter.params.provider.Arguments
 import org.junit.jupiter.params.provider.MethodSource

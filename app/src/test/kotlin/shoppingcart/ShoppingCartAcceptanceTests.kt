@@ -1,9 +1,9 @@
-package main
+package shoppingcart
 
-import main.presenters.ShoppingCartPresenter
-import main.application.ShoppingCart
-import main.domain.Amount
-import main.domain.Product
+import shoppingcart.presenters.ShoppingCartPresenter
+import shoppingcart.application.ShoppingCart
+import shoppingcart.domain.Amount
+import shoppingcart.domain.Product
 import kotlin.test.Test
 import kotlin.test.assertEquals
 

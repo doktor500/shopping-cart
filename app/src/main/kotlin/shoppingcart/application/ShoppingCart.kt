@@ -1,7 +1,7 @@
-package main.application
+package shoppingcart.application
 
-import main.domain.Amount
-import main.domain.Product
+import shoppingcart.domain.Amount
+import shoppingcart.domain.Product
 
 data class ShoppingCart(val items: List<ShoppingCartItem> = emptyList()) {
     companion object {

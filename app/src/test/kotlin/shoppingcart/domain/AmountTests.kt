@@ -1,4 +1,4 @@
-package main.domain
+package shoppingcart.domain
 
 import kotlin.test.Test
 import org.junit.jupiter.params.ParameterizedTest

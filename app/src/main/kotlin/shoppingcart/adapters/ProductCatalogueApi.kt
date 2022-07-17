@@ -1,10 +1,10 @@
-package main.adapters
+package shoppingcart.adapters
 
 import arrow.core.Either
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import com.fasterxml.jackson.module.kotlin.readValue
-import main.application.ProductCatalogue
-import main.domain.Amount
+import shoppingcart.application.ProductCatalogue
+import shoppingcart.domain.Amount
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import okhttp3.Response

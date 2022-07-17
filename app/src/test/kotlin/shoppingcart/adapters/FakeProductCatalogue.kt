@@ -1,9 +1,9 @@
-package main.adapters
+package shoppingcart.adapters
 
 import arrow.core.Either
-import main.application.ProductCatalogue
-import main.domain.Amount
-import main.domain.Product
+import shoppingcart.application.ProductCatalogue
+import shoppingcart.domain.Amount
+import shoppingcart.domain.Product
 
 class FakeProductCatalogue : ProductCatalogue {
     private val products = listOf(

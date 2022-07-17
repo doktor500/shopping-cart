@@ -1,7 +1,7 @@
-package main.application
+package shoppingcart.application
 
 import arrow.core.Either
-import main.domain.Amount
+import shoppingcart.domain.Amount
 
 interface ProductCatalogue {
     fun getPrice(productName: String): Either<Error, Amount>
